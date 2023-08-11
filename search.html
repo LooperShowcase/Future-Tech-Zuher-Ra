@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="toggle" rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>that thing</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>   
+    <div id="navbar">
+        <a href="index.html">Draw?</a>
+        <a href="search.html">SearchBar</a>
+
+
+      </div>
+      
+      <button onclick="speak()">Init Audio</button>
+            <div id="dark"><button onclick = "changeStyle()"> Toogle theme </button>
+
+      <script>
+        function changeStyle() {
+           var style = document.getElementById('toggle');
+           if (style.getAttribute('href') == 'dark.css') {
+           style.setAttribute('href', 'style.css');
+           } else {
+            style.setAttribute('href', 'dark.css'); 
+           }
+        }
+        
+     </script>
+      </div>
+      <div id="logo">
+        <img src="image.png" width="10%" height="10%">
+        <div class="container">
+          <form onsubmit="
+          event.preventDefault();
+          conversationUserAdd(document.getElementById('input-text').value);
+          openai_test();">
+          <input type="text" id="input-text" placeholder="search here">
+          <button id="submit-button">submit</button>
+      </form>
+          <div id="chat-container"></div>
+        </div>
+      </div>
+      
+</body>
+</html>

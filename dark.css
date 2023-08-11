@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font for the whole page */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+  }
+  
+  /* Style the navbar */
+  #navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Style the container */
+  .container {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the input and button inside the container */
+  #input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+  }
+  
+  #input-text::placeholder {
+    color: #888;
+  }
+  
+  #submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #submit-button:hover {
+    background-color: #777;
+  }
+  
+  /* Style the chat container */
+  #chat-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #1a1a1a;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #f4f4f4;
+  }
+  
+  /* Style the audio button */
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  
+  /* Set a background image and color for the body */
+  body {
+    background-image: url('your-background-image.jpg');
+    background-color: #111; /* Fallback color in case the image is not loaded or displayed */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #dark {
+    float:right;
+    text-align:right;}
+    #logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
